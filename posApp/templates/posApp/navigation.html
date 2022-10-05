@@ -1,0 +1,49 @@
+{% load static %}
+<!-- partial:partials/_sidebar.html -->
+<aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open  bg-gradient" style="background-color: darkslategrey;">
+    <div class="mdc-drawer__header border-bottom border-light">
+        <a href="{% url 'home-page' %}" class="brand-logo">
+            <div class="profile">
+                <img src="https://lh6.googleusercontent.com/-Kujcxu4Ml14/AAAAAAAAAAI/AAAAAAAAAAA/VmbsH8N90EM/s55-p-k-no-ns-nd/photo.jpg" style="padding-left: 80px;border-radius: 5px">
+
+            </div>
+            <h3 class="text-center text-light">Heer POS</h3>
+        </a>
+    </div>
+    <div class="mdc-drawer__content">
+        <div class="mdc-list-group">
+            <nav class="mdc-list mdc-drawer-menu">
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="{% url 'home-page' %}">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i> Home
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="{% url 'category-page' %}">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">list</i> Category List
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="{% url 'product-page' %}">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">label</i> Product List
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="{% url 'pos-page' %}">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">payment</i>Billing
+                    </a>
+                </div>
+                <div class="mdc-list-item mdc-drawer-item">
+                    <a class="mdc-drawer-link" href="{% url 'sales-page' %}">
+                        <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">receipt</i> Sales
+                    </a>
+                </div>
+
+                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop"style="padding-top: 200px;padding-left: 20px;color: white;">
+                                <span class="text-center text-sm-left d-block d-sm-inline-block tx-14">Copyright © Harshil Joshi</a> {% now 'Y' %}</span>
+                            </div>
+            </nav>
+        </div>
+    </div>
+</aside>
+<!-- partial -->
